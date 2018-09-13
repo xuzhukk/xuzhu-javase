@@ -1,4 +1,4 @@
-package xuzhu.thread;
+package xuzhu.thread.threadpoolexecutor;
 
 public class MyRunnable implements Runnable {
 	// 正在执行的任务数
