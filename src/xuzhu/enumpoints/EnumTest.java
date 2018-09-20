@@ -2,7 +2,7 @@ package xuzhu.enumpoints;
 
 
 /**
- * JavaÃ¶¾ÙÓÃ·¨²âÊÔ
+ * Javaæšä¸¾ç”¨æ³•æµ‹è¯•
  * <p>
  * Created by xuzhu on 2016/12/15
  */
@@ -14,7 +14,7 @@ public class EnumTest {
     }
  
     /**
-     * Ñ­»·Ã¶¾Ù,Êä³öordinalÊôĞÔ£»ÈôÃ¶¾ÙÓĞÄÚ²¿ÊôĞÔ£¬ÔòÒ²Êä³ö¡£(ËµµÄ¾ÍÊÇÎÒ¶¨ÒåµÄTYPEÀàĞÍµÄÃ¶¾ÙµÄtypeNameÊôĞÔ)
+     * å¾ªç¯æšä¸¾,è¾“å‡ºordinalå±æ€§ï¼›è‹¥æšä¸¾æœ‰å†…éƒ¨å±æ€§ï¼Œåˆ™ä¹Ÿè¾“å‡ºã€‚(è¯´çš„å°±æ˜¯æˆ‘å®šä¹‰çš„TYPEç±»å‹çš„æšä¸¾çš„typeNameå±æ€§)
      */
     private static void forEnum() {
         for (SimpleEnum simpleEnum : SimpleEnum.values()) {
@@ -27,22 +27,22 @@ public class EnumTest {
     }
  
     /**
-     * ÔÚJava´úÂëÊ¹ÓÃÃ¶¾Ù
+     * åœ¨Javaä»£ç ä½¿ç”¨æšä¸¾
      */
     private static void useEnumInJava() {
         String typeName = "f5";
         TYPE type = TYPE.fromTypeName(typeName);
         if (TYPE.BALANCE.equals(type)) {
-            System.out.println("¸ù¾İ×Ö·û´®»ñµÃµÄÃ¶¾ÙÀàĞÍÊµÀı¸úÃ¶¾Ù³£Á¿Ò»ÖÂ");
+            System.out.println("æ ¹æ®å­—ç¬¦ä¸²è·å¾—çš„æšä¸¾ç±»å‹å®ä¾‹è·Ÿæšä¸¾å¸¸é‡ä¸€è‡´");
         } else {
-            System.out.println("´óÊ¦ĞÖ´úÂë´íÎó");
+            System.out.println("å¤§å¸ˆå…„ä»£ç é”™è¯¯");
         }
  
     }
  
     /**
-     * ¼¾½ÚÃ¶¾Ù(²»´ø²ÎÊıµÄÃ¶¾Ù³£Á¿)Õâ¸öÊÇ×î¼òµ¥µÄÃ¶¾ÙÊ¹ÓÃÊµÀı
-     * Ordinal ÊôĞÔ£¬¶ÔÓ¦µÄ¾ÍÊÇÅÅÁĞË³Ğò£¬´Ó0¿ªÊ¼¡£
+     * å­£èŠ‚æšä¸¾(ä¸å¸¦å‚æ•°çš„æšä¸¾å¸¸é‡)è¿™ä¸ªæ˜¯æœ€ç®€å•çš„æšä¸¾ä½¿ç”¨å®ä¾‹
+     * Ordinal å±æ€§ï¼Œå¯¹åº”çš„å°±æ˜¯æ’åˆ—é¡ºåºï¼Œä»0å¼€å§‹ã€‚
      */
     private enum SimpleEnum {
         SPRING,
@@ -53,7 +53,7 @@ public class EnumTest {
  
  
     /**
-     * ³£ÓÃÀàĞÍ(´ø²ÎÊıµÄÃ¶¾Ù³£Á¿£¬Õâ¸öÖ»ÊÇÔÚÊéÉÏ²»³£¼û£¬Êµ¼ÊÊ¹ÓÃ»¹ÊÇºÜ¶àµÄ£¬¿´¶®Õâ¸ö£¬Ê¹ÓÃ¾Í²»ÊÇÎÊÌâÀ²¡£)
+     * å¸¸ç”¨ç±»å‹(å¸¦å‚æ•°çš„æšä¸¾å¸¸é‡ï¼Œè¿™ä¸ªåªæ˜¯åœ¨ä¹¦ä¸Šä¸å¸¸è§ï¼Œå®é™…ä½¿ç”¨è¿˜æ˜¯å¾ˆå¤šçš„ï¼Œçœ‹æ‡‚è¿™ä¸ªï¼Œä½¿ç”¨å°±ä¸æ˜¯é—®é¢˜å•¦ã€‚)
      */
     private enum TYPE {
         FIREWALL("firewall"),
@@ -67,9 +67,9 @@ public class EnumTest {
         }
  
         /**
-         * ¸ù¾İÀàĞÍµÄÃû³Æ£¬·µ»ØÀàĞÍµÄÃ¶¾ÙÊµÀı¡£
+         * æ ¹æ®ç±»å‹çš„åç§°ï¼Œè¿”å›ç±»å‹çš„æšä¸¾å®ä¾‹ã€‚
          *
-         * @param typeName ÀàĞÍÃû³Æ
+         * @param typeName ç±»å‹åç§°
          */
         public static TYPE fromTypeName(String typeName) {
             for (TYPE type : TYPE.values()) {

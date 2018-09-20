@@ -1,4 +1,4 @@
-package xuzhu.thread.test;
+package xuzhu.thread.withnotarget;
 
 public class Test1 {
 	public static void main(String[] args) {

@@ -8,11 +8,11 @@ public class FileTest {
 
 		System.out.println(file.exists());
 
-		// File¶ÔÏóÊÇ·ñÊÇÄ¿Â¼
+		// Fileå¯¹è±¡æ˜¯å¦æ˜¯ç›®å½•
 
 		System.out.println(file.isDirectory());
 
-		// ¶ÔÏóÊÇ·ñÊÇÎÄ¼ş
+		// å¯¹è±¡æ˜¯å¦æ˜¯æ–‡ä»¶
 
 		System.out.println(file.isFile());
 	}
