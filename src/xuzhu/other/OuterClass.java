@@ -1,4 +1,4 @@
-package xuzhu.test;
+package xuzhu.other;
 
 public class OuterClass {
 	public void display(final String name, final String age) {

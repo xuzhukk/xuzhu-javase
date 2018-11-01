@@ -1,5 +1,12 @@
 package xuzhu.polym;
 
+/**
+ * 多态 
+ * 重载-编译多态
+ * 运行时多态 (继承 接口)
+ * @author xuzhu
+ *
+ */
 public class PolymTest {
 	public static void main(String[] args) {
 		A b = new B();
